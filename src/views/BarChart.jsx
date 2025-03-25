@@ -9,7 +9,7 @@ Práctica de la Capacitación:
 
 import { Bar } from "react-chartjs-2";
 import {
-  Chart as ChartJS,s
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   BarElement,
@@ -61,7 +61,7 @@ const data = {
 
 const options = {
   indexAxis: "y", // Esto convierte el gráfico en horizontal
-  responsive: false,
+  responsive: true,
   plugins: {
     legend: {
       position: "bottom",
