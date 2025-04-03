@@ -22,10 +22,7 @@ const data = {
   ],
 };
 
-const options = {
-  responsive: true, // Se ajusta al contenedor
-  maintainAspectRatio: false,
-};
+const options = {};
 
 export default function PieChart() {
   return <Pie data={data} options={options} />;

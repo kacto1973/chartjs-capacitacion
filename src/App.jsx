@@ -15,15 +15,21 @@ function App() {
         <h1 className="text-3xl font-bold absolute top-10 left-1/2 -translate-x-1/2">
           Chart JS - Ejemplos
         </h1>
-        <div className="w-1/2 h-1/2">
-          {/**                    <BarChart></BarChart>
+        <div className="w-1/2 h-1/2 flex justify-center">
+          {/*          <BarChart></BarChart>
+
+           */}
+          {/*          
+          <BubbleChart></BubbleChart>
+
            */}
           {/*          <PieChart></PieChart>
-           */}
-          {/*          <BubbleChart></BubbleChart>
+
            */}
           {/*          <RadarChart></RadarChart>
+
            */}
+          {/** */}
           <ScatterChart></ScatterChart>
         </div>
       </div>

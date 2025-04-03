@@ -3,24 +3,15 @@ import { Bubble } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   LinearScale,
+  CategoryScale,
   PointElement,
   Tooltip,
   Legend,
 } from "chart.js";
 
-ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
+ChartJS.register(LinearScale, PointElement, Tooltip, Legend, CategoryScale);
 
 const BubbleChart = () => {
-  const randomData = [];
-
-  for (let i = 0; i < 100; i++) {
-    let x = Math.floor(Math.random() * 100);
-    let y = Math.floor(Math.random() * 100);
-    //let r = Math.floor(Math.random() * 100);
-    let r = 13;
-    randomData.push({ x, y, r });
-  }
-
   const ventasPorRegion = [
     { region: "Norte", clientes: 150, ventas: 30000, mercado: 50 },
     { region: "Sur", clientes: 100, ventas: 25000, mercado: 40 },
@@ -54,6 +45,11 @@ const BubbleChart = () => {
     plugins: {
       legend: {
         position: "top",
+        display: false,
+      },
+      title: {
+        display: true,
+        text: "Ventas por Región",
       },
       tooltip: {
         callbacks: {

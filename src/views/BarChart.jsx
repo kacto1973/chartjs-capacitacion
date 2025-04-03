@@ -52,7 +52,7 @@ const data = {
   ],
   datasets: [
     {
-      label: "Sales per Month",
+      label: "Entries per Month",
       data: randomNumbers,
       backgroundColor: "rgba(43, 19, 148, 0.5)",
     },
@@ -61,10 +61,17 @@ const data = {
 
 const options = {
   indexAxis: "y", // Esto convierte el gráfico en horizontal
-  responsive: true,
   plugins: {
     legend: {
       position: "bottom",
+    },
+    title: {
+      display: true, // Activa el título
+      text: "Monthly Entries Report 🧪", // Texto del título
+      font: {
+        size: 18, // Tamaño del texto
+      },
+      color: "black", // Color del texto
     },
   },
 };

@@ -47,6 +47,8 @@ const ScatterChart = () => {
   };
 
   const options = {
+    maintainAspectRatio: false,
+    responsive: true,
     scales: {
       x: {
         type: "linear",
@@ -62,11 +64,6 @@ const ScatterChart = () => {
             yMax: avgY,
             borderColor: "red",
             borderWidth: 2,
-            label: {
-              content: `Promedio: ${avgY.toFixed(2)}`,
-              enabled: true,
-              position: "end",
-            },
           },
         },
       },
